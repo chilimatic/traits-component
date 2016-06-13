@@ -1,0 +1,26 @@
+{
+  "name": "chilimatic/traits-component",
+  "description": "traits component within the chilimatic framework",
+  "type": "library",
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Jakob Oberhummer",
+      "email": "office@chilimatic.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.0"
+  },
+  "config": {
+    "bin-dir": "bin/",
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "chilimatic\\lib\\Traits\\": "src/"
+    }
+  }
+}
