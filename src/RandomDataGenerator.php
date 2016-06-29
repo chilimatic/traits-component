@@ -15,7 +15,7 @@ Trait RandomDataGenerator
      *
      * @return int
      */
-    public static function getRandomInt($length = 10) : int
+    public static function getRandomInt(int $length = 10) : int
     {
         $time = time();
         mt_srand($time);
@@ -32,7 +32,7 @@ Trait RandomDataGenerator
      *
      * @return string
      */
-    public static function randomString($length = 10) : int
+    public static function randomString(int $length = 10) : int
     {
         $characters   = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $randomString = '';

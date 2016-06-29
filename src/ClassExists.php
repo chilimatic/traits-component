@@ -14,11 +14,11 @@ Trait ClassExists {
 
     /**
      * @param string $name
-     * @param bool|true $autoLoad
-     *
+     * @param string $namespace
+     * @param bool $autoLoad
      * @return bool
      */
-    public function exists($name, $namespace = '\\', $autoLoad = true) : bool
+    public function exists(string $name, string $namespace = '\\', bool $autoLoad = true) : bool
     {
         if (!$name) {
             return false;

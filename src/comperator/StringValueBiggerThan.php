@@ -17,7 +17,7 @@ Trait StringValueBiggerThan
      *
      * @return bool
      */
-    public function compare($str1, $str2) : bool
+    public function compare(string $str1, string $str2) : bool
     {
         switch (true) {
             case (!$str1 && $str2):
