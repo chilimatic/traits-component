@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 namespace chilimatic\lib\Traits;
 
 /**
@@ -32,7 +33,7 @@ Trait RandomDataGenerator
      *
      * @return string
      */
-    public static function randomString(int $length = 10) : int
+    public static function randomString(int $length = 10) : string
     {
         $characters   = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $randomString = '';

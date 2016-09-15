@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 namespace chilimatic\lib\Traits\String;
 
 /**
@@ -12,7 +14,7 @@ Trait AsciiTrait
      *
      * @return bool|string
      */
-    public function getBinaryRepresentation(string $str) : int
+    public function getBinaryRepresentation(string $str) : string
     {
         $out = '';
         for ($i = 0, $l = strlen($str); $i < $l; $i++) {

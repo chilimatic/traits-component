@@ -1,12 +1,5 @@
 <?php
-/**
- *
- * @author j
- * Date: 2/22/15
- * Time: 12:33 PM
- *
- * File: observersubject.class.php
- */
+declare(strict_types=1);
 namespace chilimatic\lib\Traits;
 
 /**

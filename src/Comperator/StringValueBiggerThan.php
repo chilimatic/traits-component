@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 namespace chilimatic\lib\Traits\Comperator;
 
 use chilimatic\lib\Traits\String\AsciiTrait;
@@ -21,9 +23,9 @@ Trait StringValueBiggerThan
     {
         switch (true) {
             case (!$str1 && $str2):
-                return true;
-            case ($str1 && !$str2):
                 return false;
+            case ($str1 && !$str2):
+                return true;
             case ($this->getAsciiStringCharacterValueSum($str1) > $this->getAsciiStringCharacterValueSum($str2)):
                 return true;
             case ($this->getAsciiStringCharacterValueSum($str1) < $this->getAsciiStringCharacterValueSum($str2)):

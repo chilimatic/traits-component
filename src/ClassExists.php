@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 namespace chilimatic\lib\Traits;
 
 /**
@@ -32,6 +33,7 @@ Trait ClassExists {
             $this->nameSpaceDelimiter,
             $className
         );
+
 
         return class_exists($className, $autoLoad);
     }
